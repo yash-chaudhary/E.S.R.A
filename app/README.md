@@ -31,3 +31,8 @@ To switch to another venv or to leave virtual environment, deactivate the venv.
 
 ```
 deactivate
+
+## App Setup
+```
+steamlit run main.py
+```

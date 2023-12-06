@@ -144,3 +144,7 @@ dist
 
 # virtual environment
 venv/
+
+# ssl proxy files
+*.pem
+*.key
