@@ -18,10 +18,10 @@ int distance;
 bool objectInFront = false;
 
 // stepper
-const int stepsPerRevolution = 2038;
-Stepper myStepper = Stepper(stepsPerRevolution, 11, 2, 3, A4); //sequence IN1-IN3-IN2-IN4 for proper step sequence
-
-
+const float STEPS_PER_REV = 32; // number of steps per internal motor revolution:
+const float GEAR_RED = 64;  // gear reduction:
+const float STEPS_SHAFT_OUT = STEPS_PER_REV * GEAR_RED; // number of steps per revolution on output shaft
+Stepper myStepper = Stepper(STEPS_SHAFT_OUT, 11, 2, 3, A4); //sequence IN1-IN3-IN2-IN4 for proper step sequence
 
 // variables
 int count = 0;
@@ -43,11 +43,6 @@ void setup() {
     // ultrasonic sensor
     pinMode(trigPin, OUTPUT);       // Sets the trigPin as an Output
     pinMode(echoPin, INPUT);        // Sets the echoPin as an Input
-
-    // motor controller
-    pinMode(11, OUTPUT);
-    pinMode(2, OUTPUT); 
-    pinMode(3, OUTPUT);
 }
 
 // loop function
@@ -116,20 +111,15 @@ void loop() {
     // countDelta * 6 * 60
     lcd.print(countDelta * 6 * 60);
 
+    delay(10);
+
     // --------------------------------------------------------------------
 }
 
 // function to control DC motor speed via PWM
 void turnMotor(int motorSpeed)  { 
-    // speed of 15 RPM is a nice speed for conveyor
     if (motorSpeed > 0) {
-    myStepper.setSpeed(motorSpeed);
-    myStepper.step(stepsPerRevolution);
-    // myStepper.step(stepsPerRevolution / 100);    // step 1/100 of a revolution:
+        myStepper.setSpeed(motorSpeed);
+	    myStepper.step(STEPS_SHAFT_OUT/100);
     }
-
-// Rotate CCW quickly at 10 RPM
-// 	myStepper.setSpeed(15);
-// 	myStepper.step(stepsPerRevolution);
-// 	// delay(10);
-// }
+}
