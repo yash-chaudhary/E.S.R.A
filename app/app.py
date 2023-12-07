@@ -136,7 +136,7 @@ def main():
             mode=WebRtcMode.SENDRECV,
             video_processor_factory=VideoProcessor,
             media_stream_constraints={"video": True, "audio": False},
-            async_processing=False,
+            async_processing=True,
         )
 
     #Confidence threshold
@@ -165,8 +165,8 @@ def main():
     # Point Configuration
     st.sidebar.markdown("<br>", unsafe_allow_html=True)  # Add space
     with st.sidebar.expander("⚙️ Line Points Configuration: ", expanded=True):
-        LINE_START = tuple(map(int, st.text_input("Starting Point (x,y)", "180,50").split(',')))
-        LINE_END = tuple(map(int, st.text_input("Ending Point (x,y)", "180,1230").split(',')))
+        LINE_START = tuple(map(int, st.text_input("Starting Point (x,y)", "250,1500").split(',')))
+        LINE_END = tuple(map(int, st.text_input("Ending Point (x,y)", "1000,1350").split(',')))
 
     if user_video_upload:
         # Check x from either LINE_START or LINE_END should be smaller than  video_information.width otherwise raise error
