@@ -25,13 +25,13 @@ This demonstration contains two parts.
 	* Use of captive-nut slot for easy assembly/disassembly
 	* Laser cut MDF for quick prototyping
 
-ADD IMAGE HERE
+![conveyor model](https://github.com/yash-chaudhary/E.S.R.A/blob/main/assets/conveyor_demo.jpeg)
 
 ### Application interface
-# Purpose: To both stream real-time video data using the device's camera (mainly iPhone/iPad) as well as	
-emsp; to have the ability to upload pre-taken videos. These video streams are then run through
-emsp; the YOLOv8 computer vision model to detect objects of interest and count when objects pas through a virtual checkpoint. This architecture is used to demonstrate the emulation of a 
-emsp; proximity sensor to count objects using computer vision.
+Purpose: To both stream real-time video data using the device's camera (mainly iPhone/iPad) as well as	
+&emsp; to have the ability to upload pre-taken videos. These video streams are then run through
+&emsp; the YOLOv8 computer vision model to detect objects of interest and count when objects pas through a virtual checkpoint. This architecture is used to demonstrate the emulation of a 
+&emsp; proximity sensor to count objects using computer vision.
 
 * Features:
 	* Ability to upload a pre-taken video and run object detection and recognition on it
