@@ -3,10 +3,12 @@ E.S.R.A - Enhanced Sensory Recognition with AI. This project includes a physical
 
 (This project was completed during the OFS AI Hackathon)
 
-## Intro
+## Demo
 This demonstration contains two parts.
 * conveyor model
 * custom app that does object detection and counting using computer vision on real-time video streams
+
+ADD DEMO VIDEO HERE
 
 ### Conveyor model
 * Purpose: physical model that emulates a typical manufacturing process
@@ -41,7 +43,7 @@ Purpose: To both stream real-time video data using the device's camera (mainly i
 	* Ability to specify start and endpoints of virtual checkpoint (when objects pass this checkpoint object count tracker is updated)
 	# Ability to modify bounding box and checkpoint line features
 	
-ADD IMAGE Here
+![application interface](https://github.com/yash-chaudhary/E.S.R.A/blob/main/assets/application_interface.png)
 
 ### TODO
 * Add real-time computer vision on streamlit-webrtc video stream
