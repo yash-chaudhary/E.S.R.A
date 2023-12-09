@@ -11,7 +11,12 @@ This demonstration contains two parts.
 ADD DEMO VIDEO HERE
 
 ### Conveyor model
-* Purpose: physical model that emulates a typical manufacturing process
+The purpose of this model is to emulate a typical part of the manufacturing process and to demonstrate the software
+in a real-life setting. This setup thus allows us to test the capabilities of different computer vision models by empirical testing
+there effective based on changing different parameters seen by the camera. These parameters can include the color, shape and size of 
+different objects as well the a color and objects of the background. This is necessary to test the feasibility of computer vision
+models in a real-life setting that is plagued by differnet objects in the background, objects blocking the camera and just a wide range
+of different objects that may be seen at different stages of the manufacturing process.
 * Electrical:
 	* Arduino UNO (compute for his project)
 	* HC-SR04 Ultrasonic sensor (used to emulate proximity sensor to detect and count objects)
