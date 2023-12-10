@@ -1,5 +1,5 @@
 # E.S.R.A
-E.S.R.A - **E**nhanced **S**ensory **R**ecognition with **A**I. This project includes a physical conveyor belt demonstration as well as an iPhone app that uses YOLOv8 computer vision model.
+E.S.R.A - **E**nhanced **S**ensory **R**ecognition with **A**I. This project includes a physical conveyor belt demonstration as well as web interface that uses the YOLOv8 computer vision model for object detection, recognition and counting.
 
 (This project was completed during the OFS AI Hackathon)
 
