@@ -36,9 +36,8 @@ of different objects that may be seen at different stages of the manufacturing p
 
 ### Application interface
 Purpose: To both stream real-time video data using the device's camera (mainly iPhone/iPad) as well as	
-&emsp; to have the ability to upload pre-taken videos. These video streams are then run through
-&emsp; the YOLOv8 computer vision model to detect objects of interest and count when objects pas through a virtual checkpoint. This architecture is used to demonstrate the emulation of a 
-&emsp; proximity sensor to count objects using computer vision.
+to have the ability to upload pre-taken videos. These video streams are then run through
+the YOLOv8 computer vision model to detect objects of interest and count when objects pas through a virtual checkpoint. This architecture is used to demonstrate the emulation of a proximity sensor to count objects using computer vision.
 
 * Features:
 	* Ability to upload a pre-taken video and run object detection and recognition on it
@@ -46,7 +45,7 @@ Purpose: To both stream real-time video data using the device's camera (mainly i
 	* Ability to select confidence threshold to filter erronous objects detected
 	* Ability to select which object classes to detect (see COCO dataset for objects that can be detected)
 	* Ability to specify start and endpoints of virtual checkpoint (when objects pass this checkpoint object count tracker is updated)
-	# Ability to modify bounding box and checkpoint line features
+	* Ability to modify bounding box and checkpoint line features
 	
 ![application interface](https://github.com/yash-chaudhary/E.S.R.A/blob/main/assets/application_interface.png)
 
