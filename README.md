@@ -37,7 +37,7 @@ of different objects that may be seen at different stages of the manufacturing p
 ### Application interface
 Purpose: To both stream real-time video data using the device's camera (mainly iPhone/iPad) as well as	
 to have the ability to upload pre-taken videos. These video streams are then run through
-the YOLOv8 computer vision model to detect objects of interest and count when objects pas through a virtual checkpoint. This architecture is used to demonstrate the emulation of a proximity sensor to count objects using computer vision.
+the YOLOv8 computer vision model to detect objects of interest and count when objects pass through a virtual checkpoint. This architecture is used to demonstrate the emulation of a proximity sensor to count objects using computer vision.
 
 Features:
 * Ability to upload a pre-taken video and run object detection and recognition on it
