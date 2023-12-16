@@ -39,7 +39,7 @@ Purpose: To both stream real-time video data using the device's camera (mainly i
 to have the ability to upload pre-taken videos. These video streams are then run through
 the YOLOv8 computer vision model to detect objects of interest and count when objects pas through a virtual checkpoint. This architecture is used to demonstrate the emulation of a proximity sensor to count objects using computer vision.
 
-* Features:
+Features:
 	* Ability to upload a pre-taken video and run object detection and recognition on it
 	* Ability to start real-time streaming via web-interface using device's camera 
 	* Ability to select confidence threshold to filter erronous objects detected
