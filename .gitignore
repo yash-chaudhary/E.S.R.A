@@ -148,3 +148,6 @@ venv/
 # ssl proxy files
 *.pem
 *.key
+
+# pycache
+**/__pycache__/

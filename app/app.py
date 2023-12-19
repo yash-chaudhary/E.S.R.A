@@ -65,19 +65,20 @@ st.markdown('''This demonstration aims to showcase the utility of computer visio
 
 st.markdown("### How to Use")
 
-st.markdown('1️⃣ Define your detection specifications (min confidence threshold and object selection')
-st.markdown('2️⃣ Point your devices camera to the manufacturing line you want to begin counting.')
-st.markdown('3️⃣ Whenever you\'re ready, hit the start button to begin the real-time video stream')
-st.markdown('4️⃣ Analyse the operation and performance of the computer vision model')
+st.markdown('1️⃣ Select between uploading a video or using your device\'s camera')
+st.markdown('2️⃣ Define detection specifications (min confidence threshold and object detection class)')
+st.markdown('3️⃣ Point your device\'s camera to the manufacturing line you want to begin counting')
+st.markdown('4️⃣ Adjust position of the virtual checkpoint to ensure the object completely passes through the line')
+st.markdown('4️⃣ Adjust position of the virtual checkpoint to ensure the object completely passes through the line')
+st.markdown('5️⃣ Analyse the operation and performance of the computer vision model and adjust accordingly')
 
 def main():
     # ------------------------pre-loading---------------------------------
 
     # Downloading default source video from Google Drive if it doesn't exist
     if not os.path.exists(VIDEO_PATHS['source']):
-        download_from_gdrive('https://drive.google.com/file/d/1U_6VpkMDYdbT_kkwlEFryaxPnkfEUTV1/view?usp=sharing', VIDEO_PATHS['source'])
+        download_from_gdrive('https://drive.google.com/file/d/1S2ugRf_DIcBka_kJINdetoa-NjQnT8nS/view?usp=sharing', VIDEO_PATHS['source'])
     
-
     # Initialize YOLO model
     placeholder = st.empty()
     if os.path.exists(MODEL_DEFAULT_PATH):
