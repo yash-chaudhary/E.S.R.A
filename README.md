@@ -49,9 +49,9 @@ Features:
 	
 ![application interface](https://github.com/yash-chaudhary/E.S.R.A/blob/main/assets/application_interface.png)
 
-### TODO
-* Add real-time computer vision on streamlit-webrtc video stream
-* Clean up UI to ensure video box is correctly sized with user window
-* Add the ability to test different computer vision models
-* Add the ability to take a take and label pictures to add to OFS manufactured goods dataset
-* Add the ability to save stream with or without labels 			
+### Future Improvements
+Eventually this repo can be transformed into a fullstack application that is usable in a production environment.
+The following are some additional features that I would ideally add if this were to be used in production.
+* Add the ability to test different computer vision models.
+* Add the ability to extract frames from a saved video and label images to add to a manufactured goods dataset.
+* Add teh ability to stream video with and without computer vision.
